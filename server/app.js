@@ -22,6 +22,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// hot refresh
+app.use(require('connect-livereload')());
+
 app.use('/', index);
 app.use('/users', users);
 
