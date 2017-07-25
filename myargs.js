@@ -1,6 +1,4 @@
-import yargs from 'yargs';
-
-const args = yargs
+const args = require('yargs')
 .option('production', {
     boolean: true,
     default: false,
@@ -26,4 +24,4 @@ const args = yargs
 })
 .argv
 
-export default args;
+console.log(args.watch)

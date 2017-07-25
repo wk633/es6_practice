@@ -15,3 +15,9 @@ gulpfile.babel.js //是为了支持es6语法
 
 要安装babel-loader babel-core babel-preset-env webpack
 要安装 require-dir
+
+要支持 .babelrc
+{
+    "presets": ["es2015"]
+}
+需要装 babel-preset-es2015
